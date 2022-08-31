@@ -16,7 +16,10 @@ body {
 .compact{
   letter-spacing: -0.5px;
 }
-
+.over{
+  z-index: 1;
+  pointer-events: none;
+}
 .devider{
   width: 90%;
   margin-bottom: clamp(60px, 12vw, 100px);

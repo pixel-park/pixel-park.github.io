@@ -1,5 +1,8 @@
 import './header.css';
 import Image from '../image/image';
+import { useRef, useEffect } from 'react';
+import Paralax from '../../tools/paralax.js';
+
 function Header () {
     const information = [
         {   
@@ -32,9 +35,16 @@ function Header () {
             marginTop : "10px"
         }
     }
+    const photo = useRef<HTMLDivElement>(null);
+    
+    useEffect(()=>{
+        if(photo !== undefined){
+            new Paralax(photo.current);
+        }
+    },[])
     return (
         <header className='header__wrapper'>
-            <div className="title compact">
+            <div className="title compact over">
                 <h2>Houman Badr</h2>
                 <h5 className='green'>Front-end developer</h5>
             </div>
@@ -49,8 +59,11 @@ function Header () {
                 </ul>
                 
             </div>
-            <div style={styles.container}>
+            {/* <div style={styles.container}>
                 <Image adr='pic.jpg' width={300} height={420} title="Houman Badr"/>
+            </div> */}
+            <div style={styles.container} ref={photo}>
+                
             </div>
         </header>
     )
