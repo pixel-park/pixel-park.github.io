@@ -35,7 +35,10 @@
         },
         "topImage" : "./uv mapper.jpg",
         "textA" : "Based on the UV map, this plugin can place a user selected image on a specific area of the target image or video (image sequence).\nSimilar functionality can be found in compositing packages such as: After Effects, Nuke, Fusion, etc.\nYou can try it bellow. Just select an image to place on the mug:",
-        "iFrame" : null,
+        "iFrame" : {
+            "url" : "https://pixel-park.github.io/uv-mapping-cpu/",
+            "height" : [440, 640]
+        },
         "textB" : null,
         "expand" : {
             "title" : ["specifications...", "hide"],
