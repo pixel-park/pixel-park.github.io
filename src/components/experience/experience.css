@@ -1,0 +1,23 @@
+.experience__wrapper{
+    width : clamp(280px, 90vw, 1500px);
+    margin: clamp(40px, 6vw, 70px) auto;
+    font-size: clamp(14px, 3vw, 24px);
+    flex-direction: column;
+}
+.experience__wrapper li{
+    font-size: 1em;
+    margin-bottom: clamp(10px, 2vw, 30px);
+}
+.experience__wrapper h5{
+    margin-top: 0;
+    bottom: 2px;
+    position: relative;
+    font-weight: 500;
+}
+.experience__wrapper ul{
+    margin-top: 0;
+}
+.experience__wrapper h4{
+    margin-bottom: 0;
+    padding-left: 2px;
+}

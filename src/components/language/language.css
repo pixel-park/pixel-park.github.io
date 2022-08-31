@@ -1,0 +1,7 @@
+.language__wrapper{
+    width : clamp(280px, 90vw, 1500px);
+    margin: clamp(60px, 12vw, 100px) auto;
+    font-size: clamp(14px, 3vw, 24px);
+    flex-direction: column;
+    padding-bottom: clamp(60px, 12vw, 100px);
+}
