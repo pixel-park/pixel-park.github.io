@@ -15,6 +15,7 @@ type imageProps = {
     iFrame : null | {
         url : string;
         height : number[] | null;
+        minWidth : number;
     };
     textB : string | null;
     expand : null | {
@@ -29,16 +30,13 @@ type imageProps = {
         url : string;
         title : string;
     };
+    screenSize : number;
   }
 
 function Project(props:imageProps){
     const [more, setMore] = useState(0);
     const [paragHeight, setHeight] = useState(0);
     const hiddenP = useRef<HTMLDivElement>(null);
-    useEffect(()=>{
-        const overalHeight = hiddenP.current && Array.from(hiddenP.current.children).reduce((ocum, curr)=> ocum + curr.getBoundingClientRect().height, 0);
-        setHeight(Math.ceil(overalHeight ? overalHeight : 0)) 
-    },[hiddenP])
     const readMore = ()=>{
         if(more > 0){
             setMore(0)
@@ -52,7 +50,12 @@ function Project(props:imageProps){
             }
         }
     }
-
+    useEffect(()=>{
+        const overalHeight = hiddenP.current && Array.from(hiddenP.current.children).reduce((ocum, curr)=> ocum + curr.getBoundingClientRect().height, 0);
+        setHeight(Math.ceil(overalHeight ? overalHeight : 0));
+        if(more && hiddenP.current) hiddenP.current.style.height = paragHeight + 'px';
+    },[hiddenP, props.screenSize])
+  
     return (
         <div>
             <div className="project-title">
@@ -68,7 +71,7 @@ function Project(props:imageProps){
             } as React.CSSProperties}>
             {props.topImage && <img src={props.topImage} alt="props.title.title" />}
             <p>{props.textA}</p>
-            {props.iFrame && <iframe src={props.iFrame.url} title={props.title.title}></iframe>}
+            {props.iFrame && props.screenSize > props.iFrame.minWidth && <iframe src={props.iFrame.url} title={props.title.title}></iframe>}
             {props.textB && <p>{props.textB}</p>}
             {props.expand && 
             <>
@@ -83,7 +86,6 @@ function Project(props:imageProps){
             {props.link && 
             <a href={props.link.url} target="_blank" rel="noreferrer">{props.link.title}</a>
             }
-            
         </div>
         </div>
     )

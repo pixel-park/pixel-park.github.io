@@ -55,8 +55,3 @@
     background-color: #00cc52;
     color: rgb(255, 255, 255);
 }
-@media (max-width: 550px){
-    .project__container iframe{
-        display: none;
-    }
-}

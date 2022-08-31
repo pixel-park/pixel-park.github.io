@@ -1,15 +1,27 @@
 import './personalprojs.css';
 import Project from './project/project';
 import data from '../../data/projects.json';
+import { useEffect, useState } from 'react';
 
 function PersonalProjs() {
-    console.log(data.projs);
-
+    const size = useWindowSize();
+    function useWindowSize() {
+    const [windowWidth, setWindowSize] = useState(0);
+        useEffect(() => {
+            function handleResize() {
+            setWindowSize(window.innerWidth);
+            }
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+        }, []); 
+    return windowWidth;
+    }
     return (
         <div className="projs__wrapper">
             <h3 className='green compact'>PERSONAL PROJECTS</h3>
             {data.projs.map(obj=>(
-                <Project {...obj} key={obj.id}/>
+                <Project {...obj} {...{screenSize:size}} key={obj.id}/>
             ))}
             
         </div>
