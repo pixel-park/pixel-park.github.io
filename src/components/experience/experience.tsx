@@ -1,7 +1,7 @@
 import './experience.css';
 function Experience(){
     const exper = [
-        {role: `Front End Developer`, company:{title:'Code-River', href:'http://riverco.de/'}, place: 'Kyiv City, Ukraine', period: 'September 2020 - August 2022', id: 1},
+        {role: `Front End Developer`, company:{title:'Code-River', href:'http://riverco.de/'}, place: 'Kyiv City, Ukraine', period: 'September 2020 - July 2022', id: 1},
         {role: `Front End Developer`, company:{title:'Freelance ', href:null}, place: 'Kyiv City, Ukraine', period: 'January 2020 - May 2021', id: 2},
         {role: `VFX Generalist`, company:{title:'Babich Design', href:null}, place: 'Kyiv, Ukraine', period: 'September 2011 – January 2020', id: 3},
         {role: `3D Generalist`, company:{title:'Brain Drain Train', href:null}, place: 'Kyiv, Ukraine', period: 'December 2008 – September 2011', id: 4},
