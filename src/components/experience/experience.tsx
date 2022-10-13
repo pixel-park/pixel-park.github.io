@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 function Experience(){
     // const mode : any = useSelector(stete => mode.mode);
     const exper = [
-        {role: `Javascript three.js Developer`, company:{title:'CommeScope', href:'https://www.commscope.com/'}, place: 'Online', period: 'September 2022 - Present', id: 1},
+        {role: `JavaScript Three.js Developer`, company:{title:'CommeScope', href:'https://www.commscope.com/'}, place: 'Belgium-Online', period: 'September 2022 - Present', id: 1},
         {role: `Front End Developer`, company:{title:'Code-River', href:'http://riverco.de/'}, place: 'Kyiv City, Ukraine', period: 'September 2020 - July 2022', id: 2},
         {role: `Front End Developer`, company:{title:'Freelance ', href:null}, place: 'Kyiv City, Ukraine', period: 'January 2020 - May 2021', id: 3},
         {role: `VFX Generalist`, company:{title:'Babich Design', href:null}, place: 'Kyiv, Ukraine', period: 'September 2011 – January 2020', id: 4},
