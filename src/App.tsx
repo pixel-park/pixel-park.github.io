@@ -7,15 +7,15 @@ import PersonalProjs from './components/perprojs/personalprojs';
 
 
 function App() {
-  
+
   return (
     <div>
-        <Header/>
-        <Summary/>
-        <Experience/>
-        <PersonalProjs/>
-        <Awards/>
-        <Language/>
+      <Header />
+      <Summary />
+      <Experience />
+      <PersonalProjs />
+      <Awards />
+      <Language />
     </div>
   );
 }
