@@ -51,7 +51,7 @@ function Header() {
         <header className='header__wrapper'>
             <div className="title compact over">
                 <h2>Houman Badr</h2>
-                <h5 className='green'>Front-end developer</h5>
+                <h5 className='green'>full Stack Javascript Developer</h5>
             </div>
             <div className="info__container compact">
                 <ul>
