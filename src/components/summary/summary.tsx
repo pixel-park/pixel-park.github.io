@@ -1,7 +1,11 @@
 import './summary.css'
-
+type content = {
+    title: string | null;
+    text: string;
+    id: number;
+}
 function Summary() {
-    const content = [
+    const content: content[] = [
         { title: `Front-end developer: `, text: ` HTML, CSS (Sass, Less), JavaScript/TypeScript, Node js/Express/MongoDb, React/Redux, Vue, svelte, Three.js, React-three-fiber, GSAP, Git, npm, and php`, id: 1 },
         { title: `15 years experienced VFX-Generalist: `, text: ` 3ds Max, Photoshop, After Effects, Blackmagic Fusion, pftrack, Thinkbox Krakatoa, etc. `, id: 2 },
         { title: null, text: `Competencies include the creation of visual content: scripting, lighting, photography & filming, 3D modeling/animation rendering, visual effects making, 2D design, motion design, etc.`, id: 3 },
