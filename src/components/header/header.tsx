@@ -1,5 +1,6 @@
 import "./header.css";
 import { useRef, useEffect } from "react";
+//@ts-ignore
 import Paralax from "../../tools/paralax";
 
 type info = {
