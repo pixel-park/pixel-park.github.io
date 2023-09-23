@@ -19,7 +19,7 @@ function PersonalProjs() {
     }
     return (
         <div className="projs__wrapper">
-            <h3 className='green compact'>PERSONAL PROJECTS</h3>
+            <h3 className='green compact' id="ass">PERSONAL PROJECTS</h3>
             {data.projs.map(obj=>(
                 <Project {...obj} {...{screenSize:size}} key={obj.id}/>
             ))}

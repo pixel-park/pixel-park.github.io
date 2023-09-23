@@ -5,7 +5,9 @@ import Awards from "./components/awards/awards";
 import Language from "./components/language/language";
 import PersonalProjs from "./components/perprojs/personalprojs";
 
+
 function App() {
+
   return (
     <div>
       <Header />
