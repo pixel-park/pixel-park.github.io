@@ -1,0 +1,11 @@
+.additional-skills__wrapper {
+  width: clamp(280px, 90vw, 1500px);
+  margin: 50px auto;
+  margin-top: 80px;
+  font-size: clamp(14px, 3vw, 24px);
+  flex-direction: column;
+}
+.additional-skills__wrapper li {
+  font-size: 1em;
+  margin-bottom: clamp(10px, 2vw, 30px);
+}
