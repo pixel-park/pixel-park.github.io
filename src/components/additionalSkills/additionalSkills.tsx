@@ -8,7 +8,7 @@ function AdditionalSkills() {
   const content: content[] = [
     {
       title: `Database Design: `,
-      text: ` Creating responsive and interactive user interfaces with HTML, CSS, and JavaScript frameworks involving 3D and AR technologies.`,
+      text: ` Proficient in designing databases for web applications.`,
       id: 0,
     },
     {
