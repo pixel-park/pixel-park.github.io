@@ -1,57 +1,68 @@
-.project-title{
-    position: relative;
-    margin-bottom: 10px;
+.project-title {
+  position: relative;
+  margin-bottom: 10px;
 }
-.project__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: clamp(8px, 2vw, 30px);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: var(--color);
-    background-image: var(--back);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    border-radius: 0 15px 15px 15px;
-    white-space: pre-line;
-    margin-bottom: clamp(20px, 3vw, 40px);
-    overflow: hidden;
+.project-title_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
 }
-.project__container img{
-    width: 100%;
+.project-title_wrapper > p {
+  color: rgb(150, 150, 150);
+  font-weight: 500;
+  font-size: 0.8em;
 }
-.project__container iframe{
-    margin: 0 auto;
-    width: 85%;
-    height: clamp(var(--iHeightMin), 35vw, var(--iHeightMax));
-    border: none;
+.project__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: clamp(8px, 2vw, 30px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--color);
+  background-image: var(--back);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 0 15px 15px 15px;
+  white-space: pre-line;
+  margin-bottom: clamp(20px, 3vw, 40px);
+  overflow: hidden;
 }
-.hidden-text__container{
-    height: 0px;
-    max-height: var(--paragHeight);
-    overflow: hidden;
-    transition: height 1s;
+.project__container img {
+  width: 100%;
 }
-.project__container button{
-    margin: 10px;
-    margin-top: clamp(15px, 3.5vw, 50px);
-    padding: 2px 8px;
-    font-size: 0.7em;
-    font-weight: 600;
-    border-radius: 12px;
-    background-color: #ffffff;
-    border: 2px solid #36bd6c;
-    color: rgb(129, 129, 129);
-    cursor: pointer;
-    display: inline;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
+.project__container iframe {
+  margin: 0 auto;
+  width: 85%;
+  height: clamp(var(--iHeightMin), 35vw, var(--iHeightMax));
+  border: none;
 }
-.project__container button:hover{
-    background-color: #00cc52;
-    color: rgb(255, 255, 255);
+.hidden-text__container {
+  height: 0px;
+  max-height: var(--paragHeight);
+  overflow: hidden;
+  transition: height 1s;
+}
+.project__container button {
+  margin: 10px;
+  margin-top: clamp(15px, 3.5vw, 50px);
+  padding: 2px 8px;
+  font-size: 0.7em;
+  font-weight: 600;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 2px solid #36bd6c;
+  color: rgb(129, 129, 129);
+  cursor: pointer;
+  display: inline;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+.project__container button:hover {
+  background-color: #00cc52;
+  color: rgb(255, 255, 255);
 }

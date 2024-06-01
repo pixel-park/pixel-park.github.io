@@ -13,7 +13,7 @@ function Summary() {
     },
     {
       title: `As a Full Stack Developer proficient in a wide range of technologies including: `,
-      text: ` HTML, CSS, JavaScript/TypeScript, Node js/Express/MongoDb, React/Redux, Vue, svelte, Three.js, React-three-fiber, AR.js, GSAP, Git, and npm`,
+      text: ` HTML, CSS, JavaScript/TypeScript, Node js/Express/MongoDb, React/Related libraries, Vue, svelte, Three.js, React-three-fiber, GSAP, Git, Docker, etc.`,
       id: 1,
     },
     {

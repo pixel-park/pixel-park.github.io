@@ -21,6 +21,11 @@ function AdditionalSkills() {
       text: ` Skilled in managing projects and coordinating teams. `,
       id: 2,
     },
+    {
+      title: `Additive Manufacturing Optimization: `,
+      text: ` Knowledgeable in optimizing designs for 3D printing, including functional concept creation and mass printing suitability, with hands-on experience operating a 3D printer. `,
+      id: 3,
+    },
   ];
   return (
     <div className="additional-skills__wrapper">
