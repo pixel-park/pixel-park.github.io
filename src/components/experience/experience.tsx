@@ -12,7 +12,7 @@ function Experience() {
       role: `JavaScript Fullstack Developer`,
       company: { title: "CommeScope", href: "https://www.commscope.com/" },
       place: "Belgium-Online",
-      period: "September 2022 - Present",
+      period: "September 2022 - June 2024",
       id: 1,
     },
     {
