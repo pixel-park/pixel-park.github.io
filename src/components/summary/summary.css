@@ -1,10 +1,15 @@
-.summary__wrapper{
-    width : clamp(280px, 90vw, 1500px);
-    margin: 0 auto;
-    font-size: clamp(14px, 3vw, 24px);
-    flex-direction: column;
+.summary__wrapper {
+  width: clamp(280px, 90vw, 1500px);
+  margin: 0 auto;
+  font-size: clamp(14px, 3vw, 24px);
+  flex-direction: column;
 }
-.summary__wrapper li{
-    font-size: 1em;
-    margin-bottom: clamp(10px, 2vw, 30px);
+.summary__wrapper li {
+  font-size: 1em;
+  margin-bottom: clamp(10px, 2vw, 30px);
+}
+
+.pb {
+  padding-bottom: 10px;
+  display: inline-table;
 }

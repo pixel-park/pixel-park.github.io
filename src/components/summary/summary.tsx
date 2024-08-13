@@ -13,7 +13,7 @@ function Summary() {
     },
     {
       title: `As a Full Stack Developer proficient in a wide range of technologies including: `,
-      text: ` HTML, CSS, JavaScript/TypeScript, Node js/Express/MongoDb, React/Related libraries, Vue, svelte, Three.js, React-three-fiber, GSAP, Git, Docker, etc.`,
+      text: ` JavaScript / TypeScript, Node js / Express / MongoDb, React / Redux-toolkit / Zustand, Vue, svelte, Three.js, React-three-fiber, GSAP, Git, Docker, HTML, CSS, Tailwind-CSS, etc.`,
       id: 1,
     },
     {
@@ -28,7 +28,12 @@ function Summary() {
       <ul>
         {content.map((item) => (
           <li key={item.id}>
-            {item.title && <strong className="gray">{item.title}</strong>}
+            {item.title && (
+              <>
+                <strong className="gray pb">{item.title}</strong> <br />
+              </>
+            )}
+
             {item.text}
           </li>
         ))}
