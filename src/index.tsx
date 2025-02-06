@@ -5,6 +5,7 @@ import App from "./App";
 import TextExplode from "./tools/TextExplode";
 const memory = {token: ""};
 
+const dev = "http://localhost:4000/";
 const path = "https://presentor-server-159962184890.us-central1.run.app/";
 let closed = true;
 window.addEventListener("unload", (e) => {
