@@ -6,9 +6,15 @@ import TextExplode from "./tools/TextExplode";
 import { handleAnalytics } from "./tools/utilities";
 const memory = {token: ""};
 
+const isMobile = (() => {
+  return (
+      /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || 
+      (navigator.maxTouchPoints > 0)
+  );
+})()
 const dev = "http://localhost:4000";
 const path = "https://presentor-server-159962184890.us-central1.run.app";
-handleAnalytics({
+const {setAnalyticState} = handleAnalytics({
   app: "CV",
   serverPath: path,
   endpoints:{
@@ -17,7 +23,8 @@ handleAnalytics({
     register: {method: "POST", endpoint: "/ok"},
   }
 })
-
+setAnalyticState({isMobile});
+console.log((isMobile))
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

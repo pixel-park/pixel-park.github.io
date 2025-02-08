@@ -37,7 +37,7 @@ export const handleAnalytics = (options: {
 
   const handleRegistration = async()=>{
     const option = {
-      method: "POST",
+      method: register.method,
       credentials: "include" as RequestCredentials,
       headers: {
         "Content-Type": "application/json",
