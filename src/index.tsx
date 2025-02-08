@@ -28,13 +28,6 @@ console.log((isMobile))
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-const reg = async () => {
-  const register = await fetch(path + "ok?app=cv");
-  const {token} = await register.json();
-      memory.token = token;
-      closed = false;
-};
-reg();
 root.render(
   // <React.StrictMode>
   <TextExplode>
