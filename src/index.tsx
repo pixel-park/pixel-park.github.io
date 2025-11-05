@@ -24,7 +24,6 @@ const {setAnalyticState} = handleAnalytics({
   }
 })
 setAnalyticState({isMobile});
-console.log((isMobile))
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
